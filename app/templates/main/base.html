@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Flask App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+ 
+    <!-- Other head elements such as meta tags, scripts, etc. -->
+</head>
+<body>
+    <!-- Your HTML content -->
+    <header class="header">
+        <h1>Welcome to Typhene's Portfolio</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        {% block content %}{% endblock %}
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024  </p>
+    </footer>
+</body>
+</html>

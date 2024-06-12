@@ -71,10 +71,10 @@ def create_app(config):
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
-    from .account import account as account_blueprint
-    app.register_blueprint(account_blueprint, url_prefix='/account')
+ #   from .account import account as account_blueprint
+ #   app.register_blueprint(account_blueprint, url_prefix='/account')
 
-    from .admin import admin as admin_blueprint
-    app.register_blueprint(admin_blueprint, url_prefix='/admin')
+#    from .admin import admin as admin_blueprint
+#    app.register_blueprint(admin_blueprint, url_prefix='/admin')
 
     return app

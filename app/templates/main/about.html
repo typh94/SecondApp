@@ -1,11 +1,48 @@
-{% import 'macros/page_macros.html' as page %}
-{% extends 'layouts/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Link to your CSS stylesheet -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
-{% block content %}
-    <div class="ui text container">
-        <h1>About</h1>
-        {{ page.render_inline_editor(editable_html_obj, current_user) }}
-    </div>
+</head>
+<body>
+    <header> 
+   <img src="{{ url_for('static', filename='photoAPP.jpeg') }}" alt="App Photo" width="1000" height="150">
+        <h1>About Me</h1>
 
-    <script src="{{ url_for('static', filename='ckeditor/ckeditor.js') }}"></script>
-{% endblock %}
+    </header>   
+     <main>       
+
+		<p>Hi there! Welcome to my About page. I'm thrilled to share a bit about myself with you.</p>
+		<p>My name is Typhène Benfriha, and I'm an aspiring backend software engineer with a passion for crafting elegant and efficient web applications. 
+		   Currently pursuing my undergraduate degree in Computer Science with a minor in Mathematics, I'm deeply fascinated by the intersection of logic, 
+		   problem-solving, and creativity that software development offers.</p>
+		<p>Before diving into the world of coding and tech, I earned a Bachelor of Science  in Psychology and Criminal Justice. While studying these disciplines,  
+		   I developed strong analytical skills and a keen eye for detail and great interpersonal skills, qualities that continue to serve me well in my journey as a software engineer.</p>
+		<p>When I'm not immersed in lines of code, you can find me exploring new technologies, tackling challenging programming problems, 
+		   ; or I could be doing artsy project using paint, ceramics, or out hiking with my dog. As a lifelong learner, I'm constantly striving to expand my knowledge and refine my skills, 
+		   always eager to learn and grow in this dynamic field.</p>
+		<p>Thank you for stopping by! Feel free to explore more about my projects and experiences, and don't hesitate to reach out if you'd like to connect   
+		   or collaborate.</p>
+
+    <nav>
+        <!-- Navigation links -->
+        <ul>
+            <li><a href="/">Home</a></li>
+             <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    </main>
+    <footer class="footer">
+    
+   <img src="{{ url_for('static', filename='photoCoolVibe.jpeg') }}" alt="Cool Vibe Photo" width="1000" height="500">
+    <p>&copy; 2024  </p>   
+
+    </footer>
+
+</body>
+</html>
+ 
