@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>About Us</title>
     <!-- Link to your CSS stylesheet -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    
+    <style>
+        header {
+            background: linear-gradient(to right, lightblue, lightpink, lightblue); /* Gradient background */
+            padding: 20px; /* Optional: Add some padding for better appearance */
+            text-align: center; /* Optional: Center the header text */
+           }
+           
+        footer {
+            background: linear-gradient(to right, lightgrey, grey, lightgrey); /* Gradient background */
+            padding: 5px; /* Optional: Add some padding for better appearance */
+            text-align: center; /* Optional: Center the header text */
+           }
+     
+    </style>  
+
+
+ <!--     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">  -->
+    
+    
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <h1>Stay in Touch </h1>
+        <h2> Feel free to reach out to me using the contact form below or using any link provided </h2>
+        
+        
     </header>
-    <nav>
-        <!-- Navigation links -->
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
     <main>
-        <p>This is the Contact page. Feel free to reach out to us using the contact form below.</p>
+        <p> </p>
         <!-- Contact form -->
         <form>
             <label for="name">Name:</label>
@@ -31,6 +48,18 @@
             <textarea id="message" name="message" rows="4" required></textarea><br><br>
             <button type="submit">Send Message</button>
         </form>
-    </main>
+    </main> 
+   <nav>
+        <!-- Navigation links -->
+     <ul>
+	    <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+         </ul>
+    </nav>
+
 </body>
+    <footer class="footer">
+        <p>&copy; 2024  </p>
+    </footer>
+
 </html>

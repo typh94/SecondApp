@@ -21,7 +21,12 @@ background-size: cover; /* Ensures the image covers the entire background */
     justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers content horizontally */
     height: 100vh; /* Makes sure body takes up full viewport height */
+
 }
+p {
+  font-weight: bold;
+  colour: blue; /* incorrect spelling of the color property */
+  font-size: 200%;
 }
 
 /* Header styles */

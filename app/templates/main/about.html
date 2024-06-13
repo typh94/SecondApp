@@ -6,12 +6,41 @@
     <title>About Us</title>
     <!-- Link to your CSS stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles.css">
-
+  
+  
+ <!--   <style>
+        p 
+        {
+            font-weight: bold;
+            color: blue; /* correct spelling */
+        }
+    </style>   -->
+    
+    
+   <style>
+        header {
+            background: linear-gradient(to right, lightblue, lightpink, lightblue ); /* Gradient background */
+            padding: 20px; /* Optional: Add some padding for better appearance */
+            text-align: left; /* Optional: Center the header text */
+         }
+        footer {
+            background: linear-gradient(to right, lightgrey, grey, lightgrey ); /* Gradient background */
+            padding: 5px; /* Optional: Add some padding for better appearance */
+            text-align: left; /* Optional: Center the header text */
+         }
+    </style>  
+    
+    
 </head>
 <body>
+
+  <!--    <div style="background-color: blue; color: white; padding: 20px;">   -->
+ 
     <header> 
-   <img src="{{ url_for('static', filename='photoAPP.jpeg') }}" alt="App Photo" width="1000" height="150">
         <h1>About Me</h1>
+  
+
+ <!--      <img src="{{ url_for('static', filename='photoAPP.jpeg') }}" alt="App Photo" width="1000" height="150">    -->
 
     </header>   
      <main>       
@@ -38,7 +67,8 @@
     </main>
     <footer class="footer">
     
-   <img src="{{ url_for('static', filename='photoCoolVibe.jpeg') }}" alt="Cool Vibe Photo" width="1000" height="500">
+ <!--    <img src="{{ url_for('static', filename='photoCoolVibe.jpeg') }}" alt="Cool Vibe Photo" width="1000" height="500">  -->
+   
     <p>&copy; 2024  </p>   
 
     </footer>
