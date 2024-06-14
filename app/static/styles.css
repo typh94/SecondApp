@@ -67,6 +67,20 @@ p {
 .main-content {
     padding: 1rem;
 }
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.marquee-container {
+    margin-right: 20px;
+}
+
+.form-container {
+    max-width: 400px;
+}
 
 /* Footer styles */
 .footer {

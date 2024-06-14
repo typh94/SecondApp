@@ -20,8 +20,8 @@
    	  /*     footer {
       /*         background: linear-gradient(to right, lightgrey, grey, lightgrey); /* Gradient background */
        /*        padding: 5px; /* Optional: Add some padding for better appearance /*
-       /*        text-align: center; /* Optional: Center the header text */
-       /*       }/*
+       /*        text-align: center; /* Optional: Center the header text  }*/
+       
      
     </style>  
     <style>
@@ -38,9 +38,10 @@ p    {color: black;}
     
     <header class="header">
     
-        <h1>	Hi, I'm Typhene Benfriha</h1>
+        <h1 >	Hi, I'm Typhene Benfriha</h1>
         <h2>	An aspiring Software Engineer  <br> eager to start my career and welcome new challenges</h2>
      </header>   
+     
           <p>	My favorite projects </p>
           <p>	Skills </p>
           <p>	Education </p>
@@ -49,6 +50,7 @@ p    {color: black;}
         <ul>
              <li><a href="{{ url_for('about') }}">About</a></li>
             <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
         </ul>
     </nav>
     <div class="main-content">

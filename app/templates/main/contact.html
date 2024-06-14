@@ -16,6 +16,39 @@
             padding: 20px; /* Optional: Add some padding for better appearance */
             text-align: center; /* Optional: Center the header text */
            }
+           
+ body 
+{
+
+  background-image   : url("static/photoCoolVibe.jpeg");
+  background-position: 50% 50%;
+  background-repeat  : repeat;
+  text-align         : center;
+  color              : white;
+  
+  }     
+           
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+         }
+        .marquee-container {
+             justify-content: center;
+                         align-items: left;
+
+ 
+         }
+        .form-container {
+            max-width: 300px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+
+        }
+ 
      /*    footer {
      /*        background: linear-gradient(to right, lightgrey, grey, lightgrey ); /* Gradient background */
      /*        padding: 5px; /* Optional: Add some padding for better appearance */
@@ -53,29 +86,33 @@ p    {color: black;}
         			 </ul> 
         
         </p>
-        					<hr/>
+<hr/>
+        <div class="contact-container">
+            <div class="marquee-container">
+                <marquee behavior="scroll" direction="down">
+                <img src="{{ url_for('static', filename='coding.gif') }}" width="800" height="400" alt="coding"> 
+                </marquee>
+            </div>    
+                    <div class="form-container">
+                <p>Question or a Comment?</p>
+                <!-- Contact form -->
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    <button type="submit">Send Message</button>
+                    <hr/>
+                </form>
+            </div>
 
-        <p> Question or a Comment ? 
-        </p>
-        
-        
-        
-        <!-- Contact form -->
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            <button type="submit">Send Message</button>
-            					<hr/>
-
-        </form>
+        </div>
     </main> 
    <nav>
         <!-- Navigation links -->
-     <ul>
+     <ul  >
 	    <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
          </ul>
