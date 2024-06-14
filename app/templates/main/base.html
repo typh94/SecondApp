@@ -11,27 +11,40 @@
     
     <style>
         header {
-            background: linear-gradient(to right, lightblue, lightpink, lightblue); /* Gradient background */
+          /*  background: linear-gradient(to right, lightblue, lightpink, lightblue); /* Gradient background */
+            background: hsl(211, 13%, 65%); /* Gradient background */
             padding: 20px; /* Optional: Add some padding for better appearance */
-            text-align: center; /* Optional: Center the header text */
+            text-align: left; /* Optional: Center the header text */
            }
            
-        footer {
-            background: linear-gradient(to right, lightgrey, grey, lightgrey); /* Gradient background */
-            padding: 5px; /* Optional: Add some padding for better appearance */
-            text-align: center; /* Optional: Center the header text */
-           }
+   	  /*     footer {
+      /*         background: linear-gradient(to right, lightgrey, grey, lightgrey); /* Gradient background */
+       /*        padding: 5px; /* Optional: Add some padding for better appearance /*
+       /*        text-align: center; /* Optional: Center the header text */
+       /*       }/*
      
     </style>  
+    <style>
+body {background-color: lightgrey;}
+h1   {color: black;}
+p    {color: black;}
+</style>
 
-    
+     
 </head>
 <body>
+
     <!-- Your HTML content -->
     
     <header class="header">
-        <h1>Welcome to Typhene's Portfolio</h1>
-    </header>
+    
+        <h1>	Hi, I'm Typhene Benfriha</h1>
+        <h2>	An aspiring Software Engineer  <br> eager to start my career and welcome new challenges</h2>
+     </header>   
+          <p>	My favorite projects </p>
+          <p>	Skills </p>
+          <p>	Education </p>
+
     <nav class="navbar">
         <ul>
              <li><a href="{{ url_for('about') }}">About</a></li>
